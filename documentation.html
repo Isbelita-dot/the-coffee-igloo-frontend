@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Igloo Documentation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>The Coffee Igloo</h1>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#recipes">Recipes</a>
+            <a href="documentation.html">Docs</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>The Coffee Igloo API Documentation</h1>
+
+        <section>
+            <h2>Purpose</h2>
+            <p>
+                The Coffee Igloo API allows users to create, view, update,
+                and delete healthy iced coffee recipes.
+            </p>
+        </section>
+
+        <section>
+            <h2>Endpoints</h2>
+            <p>GET /recipes</p>
+            <p>GET /recipes/{id}</p>
+            <p>POST /recipes</p>
+            <p>PUT /recipes/{id}</p>
+            <p>DELETE /recipes/{id}</p>
+        </section>
+
+        <section>
+            <h2>Request Examples</h2>
+            <p>Create a new recipe:</p>
+            <pre>
+POST /recipes
+{
+    "name": "Vanilla Protein Latte",
+    "category": "High Protein",
+    "calories": 180,
+    "protein": 25,
+    "preparation_time": 5
+}
+            </pre>
+        </section>
+
+        <section>
+            <h2>Response Examples</h2>
+            <pre>
+{
+    "id": 1,
+    "name": "Vanilla Protein Latte",
+    "category": "High Protein",
+    "calories": 180,
+    "protein": 25,
+    "preparation_time": 5
+}
+            </pre>
+        </section>
+
+    </main>
+
+</body>
+</html>

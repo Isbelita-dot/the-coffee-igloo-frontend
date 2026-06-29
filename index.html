@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee Igloo</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>The Coffee Igloo</h1>
+        <p>Discover and manage healthy coffee recipes.</p>
+
+        <nav class="main-nav">
+            <a href="#">Home</a>
+            <a href="#">Recipes</a>
+            <a href="#">Docs</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Search Recipes</h2>
+
+            <label for="search">Search</label>
+            <input type="text" id="search" placeholder="Search recipes...">
+        </section>
+
+        <form class="recipe-form">
+
+            <h2>Add Recipe</h2>
+
+            <label for="name">Name</label>
+            <input type="text" id="name">
+
+            <label for="category">Category</label>
+            <select id="category">
+                <option>High Protein</option>
+                <option>Low Calorie</option>
+                <option>Vegan</option>
+                <option>Dairy Free</option>
+                <option>Decaf</option>
+                <option>Energy Boost</option>
+            </select>
+
+            <label for="calories">Calories</label>
+            <input type="number" id="calories">
+
+            <label for="protein">Protein</label>
+            <input type="number" id="protein">
+
+            <label for="prep-time">Preparation Time</label>
+            <input type="number" id="prep-time">
+
+            <label for="ingredients">Ingredients</label>
+            <textarea id="ingredients"></textarea>
+
+            <label for="instructions">Instructions</label>
+            <textarea id="instructions"></textarea>
+
+            <button type="submit">Add Recipe</button>
+
+        </form>
+
+      <section class="recipes-section">
+    <h2>Recipes</h2>
+
+    <div class="recipe-actions">
+
+        <article class="recipe-card">
+            <h3>Mocha Protein Latte</h3>
+
+            <p><strong>Category:</strong> High Protein</p>
+            <p><strong>Calories:</strong> 190</p>
+            <p><strong>Protein:</strong> 24g</p>
+            <p><strong>Preparation Time:</strong> 5 min</p>
+
+            <button>Edit</button>
+            <button>Delete</button>
+        </article>
+
+        <article class="recipe-card">
+            <h3>Honey Cinnamon Cold Brew</h3>
+
+            <p><strong>Category:</strong> Low Calorie</p>
+            <p><strong>Calories:</strong> 90</p>
+            <p><strong>Protein:</strong> 2g</p>
+            <p><strong>Preparation Time:</strong> 3 min</p>
+
+            <button>Edit</button>
+            <button>Delete</button>
+        </article>
+
+        <article class="recipe-card">
+            <h3>Vanilla Protein Latte</h3>
+
+            <p><strong>Category:</strong> High Protein</p>
+            <p><strong>Calories:</strong> 180</p>
+            <p><strong>Protein:</strong> 25g</p>
+            <p><strong>Preparation Time:</strong> 5 min</p>
+
+            <button>Edit</button>
+            <button>Delete</button>
+        </article>
+
+    </div>
+</section>
+
+    </main>
+<footer>
+    <p>© 2026 The Coffee Igloo | API Recipe Manager</p>
+</footer>
+</body>
+</html>
