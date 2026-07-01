@@ -22,14 +22,14 @@
 
     <main>
 
-        <section>
+        <section class="search-section">
             <h2>Search Recipes</h2>
 
             <label for="search">Search</label>
             <input type="text" id="search" placeholder="Search recipes...">
         </section>
 
-        <form class="recipe-form">
+        <form id="recipe-form" class="recipe-form">
 
             <h2>Add Recipe</h2>
 
@@ -65,53 +65,17 @@
 
         </form>
 
-      <section class="recipes-section">
+        <section class="recipes-section">
     <h2>Recipes</h2>
 
-    <div class="recipe-actions">
-
-        <article class="recipe-card">
-            <h3>Mocha Protein Latte</h3>
-
-            <p><strong>Category:</strong> High Protein</p>
-            <p><strong>Calories:</strong> 190</p>
-            <p><strong>Protein:</strong> 24g</p>
-            <p><strong>Preparation Time:</strong> 5 min</p>
-
-            <button>Edit</button>
-            <button>Delete</button>
-        </article>
-
-        <article class="recipe-card">
-            <h3>Honey Cinnamon Cold Brew</h3>
-
-            <p><strong>Category:</strong> Low Calorie</p>
-            <p><strong>Calories:</strong> 90</p>
-            <p><strong>Protein:</strong> 2g</p>
-            <p><strong>Preparation Time:</strong> 3 min</p>
-
-            <button>Edit</button>
-            <button>Delete</button>
-        </article>
-
-        <article class="recipe-card">
-            <h3>Vanilla Protein Latte</h3>
-
-            <p><strong>Category:</strong> High Protein</p>
-            <p><strong>Calories:</strong> 180</p>
-            <p><strong>Protein:</strong> 25g</p>
-            <p><strong>Preparation Time:</strong> 5 min</p>
-
-            <button>Edit</button>
-            <button>Delete</button>
-        </article>
-
-    </div>
+    <div id="recipes-container"></div>
 </section>
 
     </main>
 <footer>
     <p>© 2026 The Coffee Igloo | API Recipe Manager</p>
 </footer>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>
