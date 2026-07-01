@@ -1,75 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Coffee Igloo Documentation</title>
+
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="assets/favicon.png">
 </head>
 
 <body>
 
-    <header>
-        <h1>The Coffee Igloo</h1>
+    <header class="site-header">
 
-        <nav>
+        <div>
+            <h1>The Coffee Igloo</h1>
+            <p>Healthy Coffee Recipe API</p>
+        </div>
+
+        <nav class="main-nav">
             <a href="index.html">Home</a>
-            <a href="index.html#recipes">Recipes</a>
             <a href="documentation.html">Docs</a>
         </nav>
+
     </header>
 
     <main>
 
-        <h1>The Coffee Igloo API Documentation</h1>
+        <div class="documentation">
 
-        <section>
-            <h2>Purpose</h2>
-            <p>
-                The Coffee Igloo API allows users to create, view, update,
-                and delete healthy iced coffee recipes.
-            </p>
-        </section>
+            <h1>The Coffee Igloo API Documentation</h1>
 
-        <section>
-            <h2>Endpoints</h2>
-            <p>GET /recipes</p>
-            <p>GET /recipes/{id}</p>
-            <p>POST /recipes</p>
-            <p>PUT /recipes/{id}</p>
-            <p>DELETE /recipes/{id}</p>
-        </section>
+            <section>
 
-        <section>
-            <h2>Request Examples</h2>
-            <p>Create a new recipe:</p>
-            <pre>
-POST /recipes
-{
-    "name": "Vanilla Protein Latte",
-    "category": "High Protein",
-    "calories": 180,
-    "protein": 25,
-    "preparation_time": 5
-}
-            </pre>
-        </section>
+                <h2>Project Overview</h2>
 
-        <section>
-            <h2>Response Examples</h2>
-            <pre>
-{
-    "id": 1,
-    "name": "Vanilla Protein Latte",
-    "category": "High Protein",
-    "calories": 180,
-    "protein": 25,
-    "preparation_time": 5
-}
-            </pre>
-        </section>
+                <p>
+                    The Coffee Igloo is a full-stack web application that allows
+                    users to create, view, update, search and delete healthy
+                    coffee recipes through a REST API.
+                </p>
+
+                <p>
+                    The frontend is built with HTML, CSS and JavaScript, while
+                    the backend uses FastAPI and SQLite.
+                </p>
+
+            </section>
+
+            <section>
+
+                <h2>Technologies</h2>
+
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6)</li>
+                    <li>Axios</li>
+                    <li>Python</li>
+                    <li>FastAPI</li>
+                    <li>SQLite</li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2>Available Endpoints</h2>
+
+                <ul>
+                    <li><strong>GET</strong> /recipes</li>
+                    <li><strong>GET</strong> /recipes/{id}</li>
+                    <li><strong>POST</strong> /recipes</li>
+                    <li><strong>PUT</strong> /recipes/{id}</li>
+                    <li><strong>DELETE</strong> /recipes/{id}</li>
+                </ul>
+
+            </section>
+
+            <section>
+
+                <h2>Interactive API Documentation</h2>
+
+                <p>
+                    FastAPI automatically generates interactive API documentation
+                    using Swagger UI. Click the button below to explore every
+                    endpoint, test requests and view responses.
+                </p>
+
+                <a
+                    href="http://127.0.0.1:8000/docs"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="documentation-button">
+
+                    Open Swagger Documentation
+
+                </a>
+
+            </section>
+
+        </div>
 
     </main>
+
+    <footer>
+        <p>© 2026 The Coffee Igloo | API Recipe Manager</p>
+    </footer>
 
 </body>
 </html>
