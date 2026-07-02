@@ -38,16 +38,23 @@ function displayRecipes(recipes) {
     card.classList.add("recipe-card");
 
     const image = document.createElement("img");
-
-    const fileName = recipe.name.trim().toLowerCase().replace(/\s+/g, "-");
-
-    image.src = `assets/${fileName}.jpg`;
-
-    image.alt = recipe.name;
     image.classList.add("recipe-image");
 
-    if (recipe.name === "Mocha Protein Latte") {
-    image.classList.add("mocha-image");
+    image.src = "assets/images/default.jpg";
+
+    const name = recipe.name.toLowerCase();
+
+    image.src = "assets/default.jpg";
+
+    if (name === "vanilla protein latte") {
+      image.src = "assets/Vanilla-Protein-Latte.jpg";
+    } else if (name === "mocha protein latte") {
+      image.src = "assets/Mocha-Protein-Latte.jpg";
+      image.classList.add("mocha-image");
+    } else if (name === "caramel protein frappe") {
+      image.src = "assets/caramel-protein-frappe.jpg";
+    } else if (name === "honey cinnamon cold brew") {
+      image.src = "assets/Honey-Cinnamon-Cold-Brew.jpg";
     }
 
     const title = document.createElement("h2");
